@@ -1,16 +1,10 @@
 This repo contains a NativeScript example of the [threejs webaudio orientation](https://threejs.org/examples/?q=audio#webaudio_orientation) demo:
 
 
-### iOS
 
-
-<img src="screenshots/ios.png?raw=true" alt="iOS screenshot of the threejs audio demo" width="300">
-
-
-
-### Android
-
-<img src="screenshots/android.png?raw=true" alt="Android screenshot of the threejs audio demo" width="300">
+| iOS | Android |
+|:---:|:-------:|
+| <img src="screenshots/ios.png?raw=true" width="300"> | <img src="screenshots/android.png?raw=true" width="300"> |
 
 ## Run
 
