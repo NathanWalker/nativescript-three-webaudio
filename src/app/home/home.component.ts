@@ -1,4 +1,4 @@
-import { Component, NO_ERRORS_SCHEMA } from "@angular/core";
+import { Component, inject, NO_ERRORS_SCHEMA } from "@angular/core";
 import {
   NativeScriptCommonModule,
   NativeScriptRouterModule,
@@ -31,7 +31,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 //@ts-ignore
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { WebGPURenderer } from "three/webgpu";
-import { GridLayout } from "@nativescript/core";
+import { GridLayout, Page } from "@nativescript/core";
 
 @Component({
   selector: "Home",
@@ -46,6 +46,12 @@ export class HomeComponent {
   canvas: Canvas | undefined;
   animationLoopStarted = false;
   root = "~/app/assets";
+  page = inject(Page);
+
+  ngOnInit(): void {
+    this.page.backgroundColor = 'black';
+    this.page.androidOverflowEdge = "top,bottom";
+  }
 
   onLoaded(event: any) {
     const grid = event.object as GridLayout;
