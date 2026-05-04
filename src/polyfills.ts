@@ -6,3 +6,5 @@
 import '@nativescript/core/globals';
 // Install @nativescript/angular specific polyfills
 import '@nativescript/angular/polyfills';
+
+import '@nativescript/canvas-polyfill'
